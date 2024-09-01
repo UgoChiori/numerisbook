@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customBlue: '#083eff',
+        customGray: '#373B47'
+      },
+      fontFamily:  {
+        haas: ['Neue Haas Grotesk Text Pro', 'san-serif'],
+      }
+    },
   },
   plugins: [],
 }

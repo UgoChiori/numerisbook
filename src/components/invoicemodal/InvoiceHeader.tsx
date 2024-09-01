@@ -20,17 +20,17 @@ const InvoiceHeader: React.FC = () => {
             <div className="flex flex-col items-start w-full md:w-auto">
                 <h1 className="text-xl md:text-2xl font-bold">Invoice - 1023494 - 2304</h1>
                 <p className="text-gray-500 mt-1 mb-2">View the details and activity of this invoice</p>
-                <button className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium mt-4 mb-4 text-sm md:text-base uppercase">
+                <button className="bg-blue-50 text-customBlue px-3 py-1 rounded-full font-medium mt-4 mb-4 text-sm md:text-base uppercase">
                     Partial Payment
                 </button>
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-end w-full md:w-auto space-y-2 md:space-y-0 md:space-x-2">
                 <button 
                     onClick={downloadPDF}
-                    className="w-full md:w-[240px] md:h-[40px] bg-white border text-blue-600 uppercase px-3 py-1 rounded-full font-medium text-sm md:text-base">
+                    className="w-full md:w-[240px] md:h-[40px] bg-white border text-customBlue uppercase px-3 py-1 rounded-full font-medium text-sm md:text-base">
                     Download as PDF
                 </button>
-                <button className="w-full md:w-[240px] md:h-[40px] bg-blue-600 text-white px-3 py-1 rounded-full font-medium text-sm md:text-base uppercase">
+                <button className="w-full md:w-[240px] md:h-[40px] bg-customBlue text-white px-3 py-1 rounded-full font-medium text-sm md:text-base uppercase">
                     Send Invoice
                 </button>
                 <div className="relative">

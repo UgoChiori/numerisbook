@@ -8,7 +8,7 @@ const RecentActivities: React.FC = () => {
       time: 'Yesterday, 12:05 PM',
       user: 'Olaniyi Ojo Adewale',
       invoiceId: '00239434',
-      avatar: '/images/avatarmi.png', // Replace with actual avatar URL
+      avatar: '/images/avatarmi.png', 
     },
     {
       description: 'Invoice creation',
@@ -37,7 +37,7 @@ const RecentActivities: React.FC = () => {
     <div className="bg-white p-4 md:p-6 rounded-[30px] shadow w-full md:w-[460px] mb-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
         <h3 className="font-bold text-lg md:text-xl">Recent Activities</h3>
-        <button className="text-blue-500 border border-blue-500 rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-0">
+        <button className="text-customBlue border border-customBlue rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-0">
           View All
         </button>
       </div>

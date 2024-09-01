@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { FaHome, FaUser, FaFileInvoice, FaCog } from "react-icons/fa";
+import { FaHome, FaScroll, FaUsers } from "react-icons/fa";
 import { MdAccountCircle, MdOutlineHelpOutline } from "react-icons/md";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MdSettings } from "react-icons/md";
 
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,31 +26,31 @@ const Sidebar: React.FC = () => {
       >
         <ul className="md:p-4 md:mt-10 md:space-y-8 text-gray-500">
           <li className="flex items-center px-4 py-2 md:px-6 md:py-3">
-            <FaHome className="mr-3" />
+            <FaHome className="mr-3 w-[24px] h-[24px]" />
             Getting Started
           </li>
           <li className="flex items-center px-4 py-2 md:px-6 md:py-3">
-            <HiOutlineViewGrid className="mr-3" />
+            <HiOutlineViewGrid className="mr-3 w-[24px] h-[24px]" />
             Overview
           </li>
           <li className="flex items-center px-4 py-2 md:px-6 md:py-3">
-            <MdAccountCircle className="mr-3" />
+            <MdAccountCircle className="mr-3 w-[24px] h-[24px]" />
             Accounts
           </li>
-          <li className="flex items-center font-bold text-gray-800 px-4 py-2 md:px-6 md:py-3">
-            <FaFileInvoice className="mr-3" />
+          <li className="flex items-center font-bold text-customGray px-4 py-2 md:px-6 md:py-3">
+            <FaScroll className="mr-3 w-[24px] h-[24px]" />
             Invoice
           </li>
           <li className="flex items-center px-4 py-2 md:px-6 md:py-3">
-            <FaUser className="mr-3" />
+            <FaUsers className="mr-3 w-[24px] h-[24px]" />
             Beneficiary Management
           </li>
           <li className="flex items-center px-4 py-2 md:px-6 md:py-3">
-            <MdOutlineHelpOutline className="mr-3" />
+            <MdOutlineHelpOutline className="mr-3 w-[24px] h-[24px]" />
             Help Center
           </li>
           <li className="flex items-center px-4 py-2 md:px-6 md:py-3">
-            <FaCog className="mr-3" />
+            <MdSettings className="mr-3 w-[24px] h-[24px]" />
             Settings
           </li>
         </ul>

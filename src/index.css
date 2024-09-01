@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* @font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayBlackItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+
+
+/* @font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayBoldItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayLight.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayLightItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+} */
+
+/* @font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayMediu.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayRomanItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayThin.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/src/assets/fonts/NeueHaasDisplayThinItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+body{
+    font-family: 'Neue Haas Grotesk Text Pro', 'san-serif';
+}

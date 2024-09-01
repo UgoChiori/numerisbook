@@ -55,7 +55,7 @@ const RecentInvoices: React.FC = () => {
     <div className="bg-white p-4 md:p-6 rounded-[30px] shadow mb-8 w-full md:w-[80%]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 md:mb-6">
         <h3 className="font-bold text-lg md:text-xl">Recent Invoices</h3>
-        <button className="text-blue-500 border border-blue-500 rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-0">
+        <button className="text-customBlue border border-customBlue rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-0">
           View All Invoices
         </button>
       </div>

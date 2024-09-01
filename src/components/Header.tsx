@@ -22,7 +22,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <BellIcon className="w-5 h-5 md:w-6 md:h-6" />
             <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-gray-200 rounded-full">
-              <span className="text-blue-500 font-semibold text-[14px] md:text-base">KD</span>
+              <span className="text-customBlue font-semibold text-[14px] md:text-base">KD</span>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             </button>
             <button
               onClick={handleOpenModal}
-              className="bg-blue-700 w-[75vw] md:w-[240px] h-[45px] md:h-[60px] text-white rounded-full px-2 md:px-4 py-1 md:py-2 hover:bg-blue-600 text-[12px] md:text-base mt-2 md:mt-0"
+              className="bg-customBlue w-[75vw] md:w-[240px] h-[45px] md:h-[60px] text-white rounded-full px-2 md:px-4 py-1 md:py-2 hover:bg-blue-600 text-[12px] md:text-base mt-2 md:mt-0"
             >
               CREATE
             </button>

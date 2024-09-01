@@ -7,7 +7,7 @@ const InvoiceActions: React.FC = () => {
         Invoice Actions
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 md:mb-10">
-        <div className="bg-blue-700 p-4 md:p-6 text-white text-center rounded-lg h-40 md:h-48 flex flex-col justify-center items-center">
+        <div className="bg-customBlue p-4 md:p-6 text-white text-center rounded-lg h-40 md:h-48 flex flex-col justify-center items-center">
           <h3 className="font-bold text-base md:text-lg">Create New Invoice</h3>
           <p className="text-sm md:text-base">Create new invoices easily</p>
         </div>
