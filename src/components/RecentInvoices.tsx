@@ -45,10 +45,10 @@ const RecentInvoices: React.FC = () => {
   ];
 
   const statusColorMap: { [key: string]: string } = {
-    Paid: 'text-green-500',
-    Overdue: 'text-red-500',
-    Draft: 'text-gray-500',
-    'Pending Payment': 'text-yellow-500',
+    Paid: 'bg-green-100 text-green-500',
+    Overdue: 'bg-red-100 text-red-500',
+    Draft: 'bg-gray-100 text-gray-500',
+    'Pending Payment': 'bg-yellow-100 text-yellow-500',
   };
 
   return (
@@ -79,9 +79,9 @@ const RecentInvoices: React.FC = () => {
                 </div>
                 <div className="flex flex-col items-start md:items-end">
                   <span className="text-black font-bold text-sm md:text-base">{invoice.amount}</span>
-                  <span className={`uppercase ${statusColorMap[invoice.status]} text-xs md:text-sm`}>
+                  <button className={` uppercase ${statusColorMap[invoice.status]} text-xs md:text-sm px-6 py-3 rounded-[24px] mb-2 mt-2`}>
                     {invoice.status}
-                  </span>
+                  </button>
                 </div>
               </li>
             ))}
