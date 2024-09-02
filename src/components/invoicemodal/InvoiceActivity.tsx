@@ -46,7 +46,7 @@ const InvoiceActivity: React.FC = () => {
               <div>
                 <p className="font-semibold text-black text-sm md:text-base">{activity.user}</p>
                 <p className="text-gray-500 text-xs md:text-sm">{activity.time}</p>
-                <p className="text-black text-sm md:text-base">{activity.description}</p>
+                <p className="bg-[#F6F8FA] text-black text-sm md:text-base">{activity.description}</p>
               </div>
             </div>
             {/* {index < activities.length - 0 && (

@@ -72,36 +72,45 @@ const InvoiceDetails: React.FC = () => {
           {/* SENDER Section */}
           <div className="w-full md:w-1/2 pr-0 md:pr-8">
             <h2 className="font-semibold text-sm text-gray-500">{senderDetails.title}</h2>
-            <div className="text-gray-400 mt-4 space-y-1">
-              {senderDetails.items.map((item, index) => (
-                <p key={index} className={`text-sm ${item.type === "email" ? "text-gray-400" : "text-black font-normal"}`}>
-                  {item.type === "email" ? <a href={`mailto:${item.value}`} className="text-gray-400 no-underline">{item.value}</a> : item.value}
-                </p>
-              ))}
+            <img src="https://via.placeholder.com/50" alt="Logo" className="w-14 h-14 rounded-lg" />
+            <div className="  mt-4 space-y-1">
+              <p className="text-[16px] text-[#1F1F23] font-[500]">{senderDetails.items[0].value}</p> {/* Company */}
+              <p className="text-[12px] font-[400] text-[#697598]">{senderDetails.items[1].value}</p> {/* Phone */}
+              <p className="text-[12px] font-[400] text-[#697598]">{senderDetails.items[2].value}</p> {/* Address */}
+              <p className="text-[12px] font-[400] text-[#697598]">
+                <a href={`mailto:${senderDetails.items[3].value}`} className="text-[12px] font-[400] text-[#697598]">
+                  {senderDetails.items[3].value}
+                </a>
+              </p> {/* Email */}
             </div>
+          
           </div>
 
-          {/* CUSTOMER Section */}
-          <div className="w-full md:w-1/2 pl-0 md:pl-8 p-4 rounded-lg border border-red-500">
-            <h2 className="font-semibold text-sm text-gray-500 ">{customerDetails.title}</h2>
-            <address className="text-gray-500 mt-4 space-y-1">
-              {customerDetails.items.map((item, index) => (
-                <p key={index} className={`text-xl ${item.type === "email" ? "text-blue-600 hover:underline" : "font-bold"}`}>
-                  {item.type === "email" ? <a href={`mailto:${item.value}`}>{item.value}</a> : item.value}
-                </p>
-              ))}
-            </address>
+       
+          <div className="w-full md:w-1/2">
+            <h2 className="font-semibold text-[12px] text-[#697598]">{customerDetails.title}</h2>
+            <div className=" mt-4 space-y-1">
+
+              <p className="text-[16px] text-[#1F1F23] font-[500]">{customerDetails.items[0].value}</p> 
+              <p className="text-[12px] font-[400] text-[#697598]">{customerDetails.items[1].value}</p> 
+              <p className="text-[12px] font-[400] text-[#697598]">
+                <a href={`mailto:${customerDetails.items[2].value}`} className="text-gray-500">
+                  {customerDetails.items[2].value}
+                </a>
+              </p> {/* Email */}
+            </div>
           </div>
+      
         </div>
 
         {/* Invoice Details Section */}
-        <div className="mt-8">
-          <h2 className="font-semibold text-lg text-gray-600 mb-4">INVOICE DETAILS</h2>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-gray-500">
+        <div className="mt-8 uppercase w-[622px]">
+          <h2 className="font-[500] text-[12px] text-[#697598] mb-4">INVOICE DETAILS</h2>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-10 text-gray-500">
             {invoiceDetails.map((detail, index) => (
               <div key={index} className="flex flex-col items-start gap-4">
-                <p className="text-sm">{detail.label}</p>
-                <p className="font-semibold text-black">{detail.value}</p>
+                <p className="text-[10px] font-[400] text-[#666F77]">{detail.label}</p>
+                <p className="font-[500] text-[#1F1F23] text-[12px]">{detail.value}</p>
               </div>
             ))}
           </div>

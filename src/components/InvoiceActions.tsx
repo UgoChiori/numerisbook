@@ -9,7 +9,7 @@ const InvoiceActions: React.FC = () => {
         Invoice Actions
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 md:mb-10">
-        <div className="bg-customBlue p-4 md:p-6 text-white text-center rounded-lg h-40 md:h-48 flex flex-col justify-center items-start gap-2">
+        <div className="bg-customBlue p-4 md:p-6 text-white text-center rounded-[24px] h-40 md:h-48 flex flex-col justify-center items-start gap-2">
           <img src="/images/moneydollar.svg" className="w-[80px] h-[80px] " alt="icon"/>
           <h3 className="text-base md:text-[22px] text-[#FFFFFF] font-[500]">
             Create New Invoice
@@ -18,7 +18,7 @@ const InvoiceActions: React.FC = () => {
             Create new invoices easily
           </p>
         </div>
-        <div className="bg-white p-4 md:p-6 text-black text-center rounded-lg h-40 md:h-48 flex flex-col justify-center items-start gap-2">
+        <div className="bg-white p-4 md:p-6 text-black text-center rounded-[24px] h-40 md:h-48 flex flex-col justify-center items-start gap-2">
         
           <MdSettings className="w-[80px] h-[80px] text-gray-400 " />
          
@@ -29,7 +29,7 @@ const InvoiceActions: React.FC = () => {
             Customize your invoices
           </p>
         </div>
-        <div className="bg-white p-4 md:p-6 text-black text-center rounded-lg h-40 md:h-48 flex flex-col justify-center items-start gap-2">
+        <div className="bg-white p-4 md:p-6 text-black text-center rounded-[24px] h-40 md:h-48 flex flex-col justify-center items-start gap-2">
           <FaUsers className="w-[80px] h-[80px] text-gray-400" />
           <h3 className="font-[500] text-base md:text-[22px] text-[#373B47]">
             Manage Customer List

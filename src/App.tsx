@@ -5,12 +5,14 @@ import InvoiceStats from "./components/InvoiceStats";
 import InvoiceActions from "./components/InvoiceActions";
 import RecentInvoices from "./components/RecentInvoices";
 import RecentActivities from "./components/RecentActivities";
+// import {Routes, Route} from "react-router-dom"
+// import InvoiceCard from "./components/invoicemodal/InvoicePaymentInfo";
 
 const App: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row bg-gray-100 min-h-screen">
       <Sidebar />
-      <div className="flex-1 bg-gray-100">
+      <div className="flex-1 bg-gray-100 ">
         <div className="p-4 lg:p-8">
           <Header />
           <InvoiceStats />
@@ -22,6 +24,9 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* <Routes>
+<Route path="/invoice" element={<InvoiceCard />} />
+      </Routes> */}
     </div>
   );
 };

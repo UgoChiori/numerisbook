@@ -16,27 +16,27 @@ const InvoiceHeader: React.FC = () => {
     }
 
     return (
-        <header className="flex flex-col md:flex-row gap-6 md:gap-10 justify-between items-center">
-            <div className="flex flex-col items-start w-full md:w-auto">
-                <h1 className="text-xl md:text-2xl font-bold">Invoice - 1023494 - 2304</h1>
-                <p className="text-gray-500 mt-1 mb-2">View the details and activity of this invoice</p>
-                <button className="bg-blue-50 text-customBlue px-3 py-1 rounded-full font-medium mt-4 mb-4 text-sm md:text-base uppercase">
+        <header className="flex flex-col md:flex-row gap-6 md:gap-10 justify-between items-center ">
+            <div className="flex flex-col items-start w-full md:w-auto gap-2">
+                <h1 className="text-xl md:text-[32px] font-haas font-[700]no-italic">Invoice - 1023494 - 2304</h1>
+                <p className="text-[#697598] mt-1 mb-2 font-[400]">View the details and activity of this invoice</p>
+                <button className="bg-blue-50 text-customBlue px-3 py-1 rounded-[24px] font-[500] mt-4 mb-4 text-[8px] md:text-[10px] uppercase w-[135px] h-[36px]">
                     Partial Payment
                 </button>
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-end w-full md:w-auto space-y-2 md:space-y-0 md:space-x-2">
                 <button 
                     onClick={downloadPDF}
-                    className="w-full md:w-[240px] md:h-[40px] bg-white border text-customBlue uppercase px-3 py-1 rounded-full font-medium text-sm md:text-base">
+                    className="w-full md:w-[240px] md:h-[68px] bg-white border text-customBlue uppercase px-3 py-1 rounded-full font-medium text-sm md:text-base">
                     Download as PDF
                 </button>
-                <button className="w-full md:w-[240px] md:h-[40px] bg-customBlue text-white px-3 py-1 rounded-full font-medium text-sm md:text-base uppercase">
+                <button className="w-full md:w-[240px] md:h-[68px] bg-customBlue text-white px-3 py-1 rounded-full font-medium text-sm md:text-base uppercase">
                     Send Invoice
                 </button>
                 <div className="relative">
                     <button 
                         onClick={toggleDropdown}
-                        className="w-full md:w-[80px] h-[40px] bg-white border uppercase text-gray-600 px-2 py-1 rounded-full font-medium text-sm md:text-base">
+                        className="w-full md:w-[80px] h-[68px] bg-white border uppercase text-gray-600 px-2 py-1 rounded-[40px] font-medium text-sm md:text-base">
                         More
                     </button>
                     {isOpen && (

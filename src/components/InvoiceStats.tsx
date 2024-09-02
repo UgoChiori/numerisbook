@@ -28,7 +28,7 @@ const InvoiceStats: React.FC = () => {
       {stats.map((stat) => (
         <div
           key={stat.title}
-          className={`p-4 bg-white rounded-lg border  h-48  flex flex-col justify-center items-start gap-4 uppercase `}
+          className={`p-4 bg-white rounded-[24px] border  h-48  flex flex-col justify-center items-start gap-4 uppercase `}
         >
           <HiOutlineViewGrid
             className="w-[35px] h-[35px] text-gray-400"
@@ -38,7 +38,7 @@ const InvoiceStats: React.FC = () => {
           <h3 className="text-[#697598] font-[400] no-italic text-[14px] ">
             {stat.title}{" "}
             <span
-              className={`ml-8 p-[12px_16px] gap-[10px] rounded-[24px] ${colorMap[stat.color]}`}
+              className={`ml-2 w-[107px] px-3 py-3 h-[47px] rounded-[24px] ${colorMap[stat.color]}`}
 
             >
               {stat.color}

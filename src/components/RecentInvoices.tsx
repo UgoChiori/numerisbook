@@ -54,8 +54,8 @@ const RecentInvoices: React.FC = () => {
   return (
     <div className="bg-white p-4 md:p-6 rounded-[30px] shadow mb-8 w-full md:w-[80%]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 md:mb-6">
-        <h3 className="font-bold text-lg md:text-xl">Recent Invoices</h3>
-        <button className="text-customBlue border border-customBlue rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-0">
+        <h3 className="font-[500] text-[20px] md:text-xl">Recent Invoices</h3>
+        <button className="uppercase font-[500] text-[14px] text-customBlue border border-gray-200 rounded-[30px] px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-0 w-[240px] h-[60px]">
           View All Invoices
         </button>
       </div>
@@ -67,7 +67,7 @@ const RecentInvoices: React.FC = () => {
             {invoiceGroup.items.map((invoice, index) => (
               <li
                 key={index}
-                className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 md:mb-6 p-2 md:p-4 border-b border-gray-200"
+                className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 md:mb-6 p-2 md:p-4  border-gray-200"
               >
                 <div className="flex flex-col mb-2 md:mb-0">
                   <span className="font-bold text-sm md:text-base">Invoice -</span>
