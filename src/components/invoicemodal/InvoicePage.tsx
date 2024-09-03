@@ -14,14 +14,15 @@ const InvoicePage: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className=" inset-0 bg-black bg-opacity-[0.09] flex justify-center items-center z-50 p-4 sm:p-6 ">
-      <div className="relative max-w-6xl mx-auto bg-white p-6 rounded-[40px] shadow-lg w-full">
+    <div className="fixed inset-0 bg-gray-500 flex justify-center items-center z-50 p-4 sm:p-6 overflow-hidden">
         <button
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-xl sm:text-2xl"
+          className="absolute top-2 right-4 text-customGray bg-white w-[50px] h-[50px] rounded-full hover:text-gray-700 text-sm sm:text-4xl border border-white"
           onClick={onClose}
         >
           &times;
         </button>
+      <div className="relative max-w-6xl mx-auto bg-white p-6 rounded-[40px] shadow-lg w-full max-h-[90vh] overflow-y-auto">
+      
         <InvoiceHeader />
         <div className="mt-4">
           <InvoiceReminder />
