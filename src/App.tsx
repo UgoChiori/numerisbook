@@ -5,8 +5,6 @@ import InvoiceStats from "./components/InvoiceStats";
 import InvoiceActions from "./components/InvoiceActions";
 import RecentInvoices from "./components/RecentInvoices";
 import RecentActivities from "./components/RecentActivities";
-// import {Routes, Route} from "react-router-dom"
-// import InvoiceCard from "./components/invoicemodal/InvoicePaymentInfo";
 
 const App: React.FC = () => {
   return (
@@ -24,9 +22,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <Routes>
-<Route path="/invoice" element={<InvoiceCard />} />
-      </Routes> */}
+   
     </div>
   );
 };
