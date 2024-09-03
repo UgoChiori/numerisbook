@@ -21,7 +21,7 @@
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 - **React Router DOM**: A library for routing in React applications.
 - **React Icons**: A collection of popular icons to enhance the UI.
-- **Jest: A testing framework used for ensuring the reliability of the application components.
+- **Jest**: A testing framework used for ensuring the reliability of the application components.
 
 ## Project Structure
 
