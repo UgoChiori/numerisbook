@@ -26,7 +26,7 @@
 ## Project Structure
 
 ```bash
-numeris-book-invoice/
+numerisbook/
 ├── public/
 │   ├── index.html
 │   └── ...
@@ -57,7 +57,7 @@ numeris-book-invoice/
 
 ### Folders and Files Overview
 
-- **`public/`**: Contains static assets like `index.html`.
+- **`public/`**: Contains static assets like `/images/images`.
 
 - **`src/components/`**:
   - **`Header.tsx`**: Manages the header section of the dashboard, ensuring consistent navigation and branding.
