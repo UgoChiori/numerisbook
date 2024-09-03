@@ -83,7 +83,7 @@ numeris-book-invoice/
 - **`main.tsx`**: The root file that renders the React app into the DOM.
 
 - **`tailwind.config.js`**: Configuration file for customizing Tailwind CSS, allowing for custom themes and utility classes.
-- **`tests/`: Contains Jest tests for various components to ensure they work as expected.
+- **`tests/`**: Contains Jest tests for various components to ensure they work as expected.
 - **`InvoiceActivity.test.tsx`: Tests for the InvoiceActivity component.
 -**`InvoiceDetails.test.tsx`: Tests for the InvoiceDetails component.
 -**`InvoiceHeader.test.tsx`: Tests for the InvoiceHeader component.
