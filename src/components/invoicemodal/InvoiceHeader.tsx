@@ -36,7 +36,7 @@ const InvoiceHeader: React.FC = () => {
                 <div className="relative">
                     <button 
                         onClick={toggleDropdown}
-                        className="w-full md:w-[80px] h-[68px] bg-white border uppercase text-gray-600 px-2 py-1 rounded-[40px] font-medium text-sm md:text-base">
+                        className="w-full md:w-[80px] md:h-[68px] bg-white border uppercase text-gray-600 px-2 py-1 rounded-[40px] font-medium text-[12px] md:text-base">
                         More
                     </button>
                     {isOpen && (

@@ -14,9 +14,9 @@ const InvoicePage: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-500 flex justify-center items-center z-50 p-4 sm:p-6 overflow-hidden">
+    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50 p-4 sm:p-6 overflow-hidden">
         <button
-          className="absolute top-2 right-4 text-customGray bg-white w-[50px] h-[50px] rounded-full hover:text-gray-700 text-sm sm:text-4xl border border-white"
+          className="absolute top-1 right-4 text-gray-400 bg-white w-[25px] h-[25px] md:w-[50px] md:h-[50px] rounded-full hover:text-gray-700 text-sm sm:text-4xl border border-white"
           onClick={onClose}
         >
           &times;

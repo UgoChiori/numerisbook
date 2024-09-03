@@ -6,34 +6,39 @@ const InvoiceActivity: React.FC = () => {
   const activities = [
     {
       time: "Today, 12:20 PM",
-      description: "Created invoice 00239434/Olaniyi Ojo Adewale",
+      description: "Created invoice ",
+      extraDescription: " 00239434/Olaniyi Ojo Adewale",
       user: "You",
     },
     {
       time: "Today, 12:20 PM",
-      description: "Sent invoice 00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale",
+      description: "Sent invoice ",
+      extraDescription: "00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale",
       user: "You",
     },
     {
       time: "Today, 12:20 PM",
-      description: "You manually confirmed a partial payment of $503,000.00",
+      description: "You manually confirmed a partial payment of ",
+      extraDescription: "$503,000.00",
       user: "Payment Confirmed",
     },
     {
       time: "Today, 12:20 PM",
-      description: "You manually confirmed a full payment of $6,000,000.00",
+      description: "You manually confirmed a full payment of ",
+      extraDescription: "$6,000,000.00",
       user: "Payment Confirmed",
     },
     {
       time: "Today, 12:20 PM",
-      description: "Sent invoice 00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale",
+      description: "Sent invoice ",
+      extraDescription: "00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale",
       user: "You",
     },
   ];
 
   return (
-    <div className="bg-white p-4 md:p-6 rounded-lg">
-      <h2 className="font-semibold text-md md:text-lg text-gray-600 mb-4">Invoice Activity</h2>
+    <div className="bg-white p-4 md:mr-4 md:p-6 w-[100%]">
+      <h2 className="font-[500] text-md md:text-[20px] text-gray-[1F1F23] mb-4">Invoice Activity</h2>
       <div className="relative">
         {activities.map((activity, index) => (
           <React.Fragment key={index}>
@@ -41,17 +46,21 @@ const InvoiceActivity: React.FC = () => {
               <img
                 src="/images/avatarmi.png"
                 alt="User"
-                className="rounded-full w-8 h-8 md:w-10 md:h-10 mr-0 md:mr-4 mb-2 md:mb-0"
+                className="relative z-10 rounded-full w-8 h-8 md:w-10 md:h-10 mr-0 md:mr-4 mt-2 md:mb-0 "
               />
-              <div>
-                <p className="font-semibold text-black text-sm md:text-base">{activity.user}</p>
-                <p className="text-gray-500 text-xs md:text-sm">{activity.time}</p>
-                <p className="bg-[#F6F8FA] text-black text-sm md:text-base">{activity.description}</p>
+              <div className="p-2 space-y-2">
+                <p className="font-500 text-black text-sm md:text-[16px]">{activity.user}</p>
+                <p className="text-[#697598] text-xs md:text-[14px]">{activity.time}</p>
+                <div className="rounded-[16px] bg-[#F6F8FA] w-[250px] py-4 p-2 h-full">
+                <p className="font-[400] text-[grey] text-sm md:text-[12px]"> {activity.description}
+                  <span className="font-[500] text-[#1F1F23] text-[12px]">{activity.extraDescription}</span>
+                </p>
+                </div>
               </div>
             </div>
-            {/* {index < activities.length - 0 && (
-              <div className="absolute left-4 md:left-7 top-14 md:top-16 bottom-0 w-px bg-gray-300"></div>
-            )} */}
+            {index < activities.length - 0 && (
+              <div className="absolute left-4 md:left-5 top-14 md:top-12 md:bottom-16 w-px bg-gray-200"></div>
+            )}
           </React.Fragment>
         ))}
       </div>
