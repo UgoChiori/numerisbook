@@ -50,11 +50,7 @@ numeris-book-invoice/
 │   ├── tailwind.config.js
 │   └── ...
 ├── tests/
-│   ├── InvoiceActivity.test.tsx
-│   ├── InvoiceDetails.test.tsx
-│   ├── InvoiceHeader.test.tsx
-│   ├── InvoiceReminder.test.tsx
-│   └── ...
+│   └── App.test.tsx
 ├── package.json
 └── README.md
 ```
