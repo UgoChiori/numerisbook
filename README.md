@@ -21,6 +21,7 @@
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 - **React Router DOM**: A library for routing in React applications.
 - **React Icons**: A collection of popular icons to enhance the UI.
+- **Jest: A testing framework used for ensuring the reliability of the application components.
 
 ## Project Structure
 
@@ -47,6 +48,12 @@ numeris-book-invoice/
 │   ├── index.tsx
 │   ├── routes.tsx
 │   ├── tailwind.config.js
+│   └── ...
+├── tests/
+│   ├── InvoiceActivity.test.tsx
+│   ├── InvoiceDetails.test.tsx
+│   ├── InvoiceHeader.test.tsx
+│   ├── InvoiceReminder.test.tsx
 │   └── ...
 ├── package.json
 └── README.md
@@ -76,6 +83,11 @@ numeris-book-invoice/
 - **`main.tsx`**: The root file that renders the React app into the DOM.
 
 - **`tailwind.config.js`**: Configuration file for customizing Tailwind CSS, allowing for custom themes and utility classes.
+- **`tests/`: Contains Jest tests for various components to ensure they work as expected.
+- **`InvoiceActivity.test.tsx`: Tests for the InvoiceActivity component.
+-**`InvoiceDetails.test.tsx`: Tests for the InvoiceDetails component.
+-**`InvoiceHeader.test.tsx`: Tests for the InvoiceHeader component.
+-**`InvoiceReminder.test.tsx`: Tests for the InvoiceReminder component.
 
 ### Responsiveness
 
