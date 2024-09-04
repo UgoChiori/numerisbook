@@ -78,7 +78,7 @@ const RecentInvoices: React.FC = () => {
               
               <div className="flex flex-col mb-2 sm:mb-0 sm:mx-8 flex-grow">
                 <span className="font-normal text-gray-500 uppercase text-xs sm:text-sm">Due Date</span>
-                <span className="font-semibold text-gray-500 text-xs sm:text-sm">{invoice.dueDate}</span>
+                <span className="font-[500]text-gray-500 text-xs sm:text-sm">{invoice.dueDate}</span>
               </div>
               
               <div className="flex flex-col items-start sm:items-end sm:ml-auto">

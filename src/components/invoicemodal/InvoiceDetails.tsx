@@ -66,6 +66,7 @@ const paymentInfo = [
 
 const InvoiceDetails: React.FC = () => {
   return (
+    
     <div className="p-4 md:p-8 border rounded-[20px] md:rounded-[50px] shadow-md w-full md:w-[100%] mt-6 mb-6 mx-auto">
       <section className="bg-pink-100 p-4 md:p-6 rounded-[20px] md:rounded-[40px] mb-8 mx-auto max-w-full md:max-w-4xl">
         <div className="flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-6">
