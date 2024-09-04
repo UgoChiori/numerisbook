@@ -49,7 +49,7 @@ const RecentActivities: React.FC = () => {
             <img
               src={activity.avatar}
               alt={activity.user}
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-2 md:mr-4 mb-2 md:mt-[-50px]"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-2 md:mr-4 mb-2 md:mt-[-78px]"
             />
             <div className="flex flex-col justify-center items-start gap-2">
               <p className="font-[500] text-sm md:text-[18px] text-[#000000]">{activity.description}</p>
