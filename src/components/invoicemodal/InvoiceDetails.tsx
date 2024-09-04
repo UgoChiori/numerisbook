@@ -1,4 +1,5 @@
 import React from "react";
+// import "../styles/invoicedetails.css"
 
 const senderDetails = {
   title: "SENDER",
