@@ -5,10 +5,13 @@ import InvoiceStats from "./components/InvoiceStats";
 import InvoiceActions from "./components/InvoiceActions";
 import RecentInvoices from "./components/RecentInvoices";
 import RecentActivities from "./components/RecentActivities";
+import { ErrorBoundary } from "react-error-boundary";
+import { ErrorFallback } from "./components/Errorboundary/ErrorFallback";
 
 const App: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row bg-gray-100 min-h-screen">
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Sidebar />
       <div className="flex-1 bg-gray-100 md:h-screen md:overflow-y-auto ">
         <div className="p-4 lg:p-8 ">
@@ -23,7 +26,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-   
+   </ErrorBoundary>
     </div>
   );
 };
