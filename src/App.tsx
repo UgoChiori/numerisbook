@@ -11,22 +11,21 @@ import { ErrorFallback } from "./components/Errorboundary/ErrorFallback";
 const App: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row bg-gray-100 min-h-screen">
-        <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <Sidebar />
-      <div className="flex-1 bg-gray-100 md:h-screen md:overflow-y-auto ">
-        <div className="p-4 lg:p-8 ">
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <Sidebar />
+        <div className="flex-1 bg-gray-100 md:h-screen md:overflow-y-auto ">
+          <div className="p-4 lg:p-8 ">
+            <Header />
+            <InvoiceStats />
+            <InvoiceActions />
 
-          <Header />
-          <InvoiceStats />
-          <InvoiceActions />
-
-          <div className="flex flex-col xl:flex-row justify-between gap-6 mt-8">
-            <RecentInvoices />
-            <RecentActivities />
+            <div className="flex flex-col xl:flex-row justify-between gap-6 mt-8">
+              <RecentInvoices />
+              <RecentActivities />
+            </div>
           </div>
         </div>
-      </div>
-   </ErrorBoundary>
+      </ErrorBoundary>
     </div>
   );
 };

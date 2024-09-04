@@ -26,11 +26,15 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className="lg:flex">
-      <button className="lg:hidden p-4 text-[#697598]" onClick={toggleSidebar}>
+      <button
+        className="lg:hidden p-4 text-[#697598]"
+        onClick={toggleSidebar}
+        aria-label="Toggle Sidebar"
+      >
         <GiHamburgerMenu size={26} />
       </button>
 
-      {/* Sidebar Component*/}
+     
       <div
         className={`absolute lg:relative lg:h-screen bg-gray-200 lg:bg-white mb-2 lg:mb-8 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
@@ -53,7 +57,7 @@ const Sidebar: React.FC = () => {
                 to={item.path}
                 className={`flex items-center px-4 py-2 lg:px-6 lg:py-3 ${
                   isActive
-                    ? "border-4 border-gray-100 text-gray-500 rounded-full"
+                    ? "md:border-4  md:border-gray-200 text-gray-500 rounded-full"
                     : "text-gray-500"
                 }`}
                 onClick={() => setIsOpen(false)}
@@ -77,6 +81,7 @@ const Sidebar: React.FC = () => {
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30"
           onClick={toggleSidebar}
+          aria-label="Close sidebar"
         ></div>
       )}
     </div>

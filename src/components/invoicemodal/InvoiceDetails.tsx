@@ -1,5 +1,5 @@
 import React from "react";
-// import "../styles/invoicedetails.css"
+
 
 const senderDetails = {
   title: "SENDER",
@@ -69,6 +69,7 @@ const InvoiceDetails: React.FC = () => {
   return (
     
     <div className="p-4 md:p-8 border rounded-[20px] md:rounded-[50px] shadow-md w-full md:w-[100%] mt-6 mb-6 mx-auto">
+      {/* ID Section */}
       <section className="bg-pink-100 p-4 md:p-6 rounded-[20px] md:rounded-[40px] mb-8 mx-auto max-w-full md:max-w-4xl">
         <div className="flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-6">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-[300px]">
@@ -230,7 +231,7 @@ const InvoiceDetails: React.FC = () => {
         </div>
       </section>
 
-      {/* Note Section */}
+      {/* Thank You Note Section */}
       <section className="mt-6 bg-gray-100 border p-6 rounded-[20px] md:rounded-[30px]">
         <p className="text-[#B7BDCF] font-[400] md:text-[14px]">NOTE</p>
         <p className="font-[400] md:text-[16px] text-[#666F77]">
