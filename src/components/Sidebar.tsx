@@ -6,7 +6,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdSettings } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 
-
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -30,17 +29,17 @@ const Sidebar: React.FC = () => {
       <button className="md:hidden p-4 text-[#697598]" onClick={toggleSidebar}>
         <GiHamburgerMenu size={26} />
       </button>
-      
+
       {/* Sidebar */}
       <div
-        className={`bg-white mb-2 md:mb-8 transition-transform duration-300 ease-in-out ${
+        className={`absolute md:relative md:h-screen  bg-white mb-2 md:mb-8 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 md:w-auto w-85 md:w-full rounded-lg`}
+        } md:translate-x-0 md:w-auto md:w-85 w-full rounded-lg`}
       >
-            <div className="flex items-center p-4">
-          <img 
-            src="/images/logoonetwo.jpeg" 
-            alt="Logo" 
+        <div className="flex items-center p-4">
+          <img
+            src="/images/logoonetwo.jpeg"
+            alt="Logo"
             className=" h-6 object-cover"
           />
         </div>
@@ -60,9 +59,7 @@ const Sidebar: React.FC = () => {
                 }`}
               >
                 <Icon
-                  className={`mr-3 w-[24px] h-[24px] ${
-                    isActive ? "" : ""
-                  }`}
+                  className={`mr-3 w-[24px] h-[24px] ${isActive ? "" : ""}`}
                 />
                 {item.name}
               </Link>
