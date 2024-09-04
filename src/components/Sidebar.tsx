@@ -32,7 +32,7 @@ const Sidebar: React.FC = () => {
 
       {/* Sidebar */}
       <div
-        className={`absolute md:relative md:h-screen  bg-white mb-2 md:mb-8 transition-transform duration-300 ease-in-out ${
+        className={`absolute md:relative md:h-screen bg-gray-200 md:bg-white mb-2 md:mb-8 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 md:w-auto md:w-85 w-full rounded-lg`}
       >
@@ -40,10 +40,10 @@ const Sidebar: React.FC = () => {
           <img
             src="/images/logoonetwo.jpeg"
             alt="Logo"
-            className=" h-6 object-cover"
+            className=" md:h-6 md:object-cover hidden md:block"
           />
         </div>
-        <ul className="md:p-4  md:space-y-8 text-gray-500">
+        <ul className="md:p-4 p-6 md:space-y-8 space-y-4 text-gray-500">
           {menuItems.map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.path;
