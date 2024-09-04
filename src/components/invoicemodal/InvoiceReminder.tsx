@@ -40,18 +40,6 @@ const Reminders: React.FC = () => {
               </svg>
             )}
           </span>
-
-          // <span
-          //   key={index}
-          //   className={`${
-          //     index <= 1
-          //       ? "bg-green-100 text-[#373B47]"
-
-          //       : "bg-[#FFFFFF] [#373B47]"
-          //   } font-[500] px-2 py-2 rounded-[24px] border text-xs md:text-[12px] whitespace-nowrap `}
-          // >
-          //   {reminder}
-          // </span>
         ))}
       </div>
     </div>

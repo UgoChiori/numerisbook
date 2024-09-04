@@ -30,7 +30,7 @@ const Sidebar: React.FC = () => {
         <GiHamburgerMenu size={26} />
       </button>
 
-      {/* Sidebar */}
+      {/* Sidebar Component*/}
       <div
         className={`absolute md:relative md:h-screen bg-gray-200 md:bg-white mb-2 md:mb-8 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"

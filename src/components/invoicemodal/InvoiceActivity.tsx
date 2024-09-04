@@ -37,9 +37,9 @@ const InvoiceActivity: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white p-4 md:mr-4 md:p-6 w-[100%]">
+    <div className="bg-white p-4 md:mr-4 md:p-6 md:w-[100%]">
       <h2 className="font-[500] text-md md:text-[20px] text-gray-[1F1F23] mb-4">Invoice Activity</h2>
-      <div className="relative">
+      <div className="relative border border-black">
         {activities.map((activity, index) => (
           <React.Fragment key={index}>
             <div className="flex flex-col md:flex-row items-start mb-4">
