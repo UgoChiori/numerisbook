@@ -56,16 +56,7 @@ const InvoiceHeader: React.FC = () => {
                </li>
              </ul>
            </div>
-            // <div className="flex flex-col justify-center items-start  absolute right-0 mt-2 w-full md:w-[262px] md:h-[130px] bg-white border shadow-lg rounded-[24px] p-[16px]">
-            //   <ul>
-            //     <li className="px-2 py-1 text-[#697598] font-[500] uppercase hover:bg-gray-100 cursor-pointer text-sm md:text-base mb-4">
-            //       Duplicate Invoice
-            //     </li>
-            //     <li className="px-2 py-1 text-[#697598] font-[500] uppercase hover:bg-gray-100 cursor-pointer text-sm md:text-base">
-            //       Get Sharable Link
-            //     </li>
-            //   </ul>
-            // </div>
+           
           )}
         </div>
       </div>

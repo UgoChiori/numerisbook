@@ -211,8 +211,6 @@ const InvoiceDetails: React.FC = () => {
         ))}
       </section>
 
-  
-
       {/* Payment Information Section */}
       <section className="border p-4 rounded-[20px] md:rounded-[30px]">
         <h2 className="font-[500] text-[14px] text-[#697598] mb-4">

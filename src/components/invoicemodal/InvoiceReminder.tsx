@@ -1,12 +1,13 @@
+
 import React from "react";
 
 const Reminders: React.FC = () => {
   return (
-    <div className="mt-8 mb-8  border border-gray-100 p-4 rounded-lg flex flex-col md:flex-row md:justify-start md:gap-4  text-center items-center justify-center md:w-[85%] md:h-[96px]">
-      <h2 className="font-[300] md:font-[400] md:mr-2  md:text-[12px] text-[#666F77] mb-4 md:mb-0 ">
+    <div className="mt-8 mb-8 border border-gray-100 p-4 rounded-lg flex flex-col md:flex-row md:justify-start md:gap-4 text-center items-center justify-center md:w-[85%] md:h-[96px]">
+      <h2 className="font-[300] md:font-[400] md:mr-2 md:text-[12px] text-[#666F77] mb-4 md:mb-0">
         REMINDERS
       </h2>
-      <div className="flex gap-2 flex-wrap md:flex-nowrap justify-center md:h-[48px]">
+      <div className="flex flex-wrap gap-2 justify-center md:flex-nowrap md:h-[48px]">
         {[
           "14 days before due date",
           "7 days before due date",
@@ -25,7 +26,7 @@ const Reminders: React.FC = () => {
             {reminder}
             {index <= 1 && (
               <svg
-                xmlns="(link unavailable)"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="#32de84"
@@ -42,6 +43,20 @@ const Reminders: React.FC = () => {
           </span>
         ))}
       </div>
+
+      {/* Media Queries for iPads */}
+      <style>{`
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .flex-wrap {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .md:flex-nowrap {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      `}</style>
     </div>
   );
 };

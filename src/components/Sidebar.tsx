@@ -26,10 +26,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className="lg:flex">
-      <button 
-        className="lg:hidden p-4 text-[#697598]" 
-        onClick={toggleSidebar}
-      >
+      <button className="lg:hidden p-4 text-[#697598]" onClick={toggleSidebar}>
         <GiHamburgerMenu size={26} />
       </button>
 
@@ -60,7 +57,7 @@ const Sidebar: React.FC = () => {
                     ? "border-4 border-gray-200 text-gray-500 rounded-full"
                     : "text-gray-500"
                 }`}
-                onClick={() => setIsOpen(false)} // Close the sidebar after selecting a menu item
+                onClick={() => setIsOpen(false)} 
               >
                 <Icon
                   className={`mr-3 w-[24px] h-[24px] ${isActive ? "" : ""}`}
@@ -72,7 +69,7 @@ const Sidebar: React.FC = () => {
         </ul>
       </div>
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30"
           onClick={toggleSidebar}
         ></div>
