@@ -52,10 +52,11 @@ const InvoiceActivity: React.FC = () => {
     <p className="font-500 text-black text-sm md:text-[16px] whitespace-nowrap overflow-ellipsis overflow-hidden">
       {activity.user}
     </p>
-    <p className="text-[#697598] text-xs md:text-[14px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+    <p className="text-[#697598] text-xs md:text-[14px] whitespace-nowrap  overflow-hidden">
       {activity.time}
     </p>
-    <div className="rounded-[16px] bg-[#F6F8FA] w-full  py-4 p-2 h-full overflow-hidden">
+ 
+    <div className="rounded-[16px] bg-[#F6F8FA] w-full  py-4 p-2 h-full">
       <p className="font-[400] text-[grey] text-sm md:text-[12px]">
         {activity.description}
         <span className="font-[500] text-[#1F1F23] text-[12px]">
@@ -67,7 +68,7 @@ const InvoiceActivity: React.FC = () => {
 </div>
 
             {index < activities.length - 0 && (
-              <div className="absolute left-4 md:left-5 top-14 md:top-12 md:bottom-16 w-px bg-gray-200"></div>
+              <div className="absolute left-4 md:left-5 top-14 md:top-12 md:bottom-[94px] w-px bg-gray-200"></div>
             )}
           </React.Fragment>
         ))}

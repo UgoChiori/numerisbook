@@ -47,7 +47,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center mb-2">
           <h2 className="text-[18px] md:text-[32px] text-[#1F1F23] font-[500]">Invoice</h2>
           <div className="flex flex-col items-center md:flex-row">
-            <button   onClick={handleOpenModal} className="w-[75vw] md:w-[240px] h-[45px] md:h-[60px] text-[#697598] border rounded-full px-2 md:px-4 py-1 md:py-2 mr-2 md:mr-4 bg-white text-[14px] md:text-base">
+            <button onClick={handleOpenModal} className="w-[75vw] md:w-[240px] h-[45px] md:h-[60px] text-[#697598] border rounded-full px-2 md:px-4 py-1 md:py-2 mr-2 md:mr-4 bg-white text-[14px] md:text-base">
               SEE WHAT'S NEW
             </button>
             <button

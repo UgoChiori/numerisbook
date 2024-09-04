@@ -31,17 +31,17 @@ const InvoiceHeader: React.FC = () => {
       <div className="flex flex-col md:flex-row items-start md:items-end w-full md:w-auto space-y-2 md:space-y-0 md:space-x-2">
         <button
           onClick={downloadPDF}
-          className="w-full md:w-[240px] md:h-[68px] bg-white border text-customBlue uppercase px-3 py-1 rounded-full font-medium text-sm md:text-base"
+          className="w-full md:w-[240px] md:h-[60px] bg-white border text-customBlue uppercase px-3 py-1 rounded-full font-medium text-sm md:text-base"
         >
           Download as PDF
         </button>
-        <button className="w-full md:w-[240px] md:h-[68px] bg-customBlue text-white px-3 py-1 rounded-full font-medium text-sm md:text-base uppercase">
+        <button className="w-full md:w-[240px] md:h-[60px] bg-customBlue text-white px-3 py-1 rounded-full font-medium text-sm md:text-base uppercase">
           Send Invoice
         </button>
         <div className="relative">
           <button
             onClick={toggleDropdown}
-            className="w-full md:w-[101px] md:h-[68px] bg-white border uppercase text-gray-600 px-2 py-1 rounded-[40px] font-[500] text-[12px] md:text-[16px]"
+            className="w-full md:w-[101px] md:h-[60px] bg-white border uppercase text-gray-600 px-2 py-1 rounded-[40px] font-[500] text-[12px] md:text-[16px]"
           >
             More
           </button>
