@@ -24,7 +24,7 @@ const InvoicePage: React.FC<ModalProps> = ({ isOpen, onClose }) => {
       <div className="relative max-w-6xl mx-auto top-10 bg-white p-6 rounded-[40px] shadow-lg w-full max-h-[90vh] overflow-y-auto">
       
         <InvoiceHeader />
-        <div className="mb-8 border border-[red]">
+        <div className="mb-8 ">
           <InvoiceReminder />
           <div className="flex flex-col sm:flex-row gap-6">
             <div className="sm:w-2/3 w-full">

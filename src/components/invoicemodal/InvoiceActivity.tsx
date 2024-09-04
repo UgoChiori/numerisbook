@@ -39,25 +39,33 @@ const InvoiceActivity: React.FC = () => {
   return (
     <div className="bg-white p-4 md:mr-4 md:p-6 md:w-[100%]">
       <h2 className="font-[500] text-md md:text-[20px] text-gray-[1F1F23] mb-4">Invoice Activity</h2>
-      <div className="relative border border-black">
+      <div className="relative">
         {activities.map((activity, index) => (
           <React.Fragment key={index}>
-            <div className="flex flex-col md:flex-row items-start mb-4">
-              <img
-                src="/images/avatarmi.png"
-                alt="User"
-                className="relative z-10 rounded-full w-8 h-8 md:w-10 md:h-10 mr-0 md:mr-4 mt-2 md:mb-0 "
-              />
-              <div className="p-2 space-y-2">
-                <p className="font-500 text-black text-sm md:text-[16px]">{activity.user}</p>
-                <p className="text-[#697598] text-xs md:text-[14px]">{activity.time}</p>
-                <div className="rounded-[16px] bg-[#F6F8FA] w-[250px] py-4 p-2 h-full">
-                <p className="font-[400] text-[grey] text-sm md:text-[12px]"> {activity.description}
-                  <span className="font-[500] text-[#1F1F23] text-[12px]">{activity.extraDescription}</span>
-                </p>
-                </div>
-              </div>
-            </div>
+            <div className="flex flex-col md:flex-row items-start mb-4 overflow-hidden">
+  <img
+    src="/images/avatarmi.png"
+    alt="User"
+    className="relative z-10 rounded-full w-8 h-8 md:w-10 md:h-10 mr-0 md:mr-4 mt-2 md:mb-0"
+  />
+  <div className="p-2 space-y-2 overflow-hidden">
+    <p className="font-500 text-black text-sm md:text-[16px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+      {activity.user}
+    </p>
+    <p className="text-[#697598] text-xs md:text-[14px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+      {activity.time}
+    </p>
+    <div className="rounded-[16px] bg-[#F6F8FA] w-full  py-4 p-2 h-full overflow-hidden">
+      <p className="font-[400] text-[grey] text-sm md:text-[12px]">
+        {activity.description}
+        <span className="font-[500] text-[#1F1F23] text-[12px]">
+          {activity.extraDescription}
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
             {index < activities.length - 0 && (
               <div className="absolute left-4 md:left-5 top-14 md:top-12 md:bottom-16 w-px bg-gray-200"></div>
             )}

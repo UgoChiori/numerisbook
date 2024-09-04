@@ -2,11 +2,11 @@ import React from "react";
 
 const Reminders: React.FC = () => {
   return (
-    <div className="mt-8 mb-8  border border-gray-100 p-4 rounded-lg flex flex-col md:flex-row md:justify-start md:gap-4  text-center items-center justify-center md:w-[95%] md:h-[96px]">
+    <div className="mt-8 mb-8  border border-gray-100 p-4 rounded-lg flex flex-col md:flex-row md:justify-start md:gap-4  text-center items-center justify-center md:w-[85%] md:h-[96px]">
       <h2 className="font-[300] md:font-[400] md:mr-2  md:text-[12px] text-[#666F77] mb-4 md:mb-0 ">
         REMINDERS
       </h2>
-      <div className="flex gap-2 flex-wrap md:flex-nowrap justify-center">
+      <div className="flex gap-2 flex-wrap md:flex-nowrap justify-center md:h-[48px]">
         {[
           "14 days before due date",
           "7 days before due date",

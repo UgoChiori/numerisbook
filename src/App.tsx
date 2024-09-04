@@ -11,12 +11,13 @@ const App: React.FC = () => {
     <div className="flex flex-col lg:flex-row bg-gray-100 min-h-screen">
       <Sidebar />
       <div className="flex-1 bg-gray-100 md:h-screen md:overflow-y-auto ">
-        <div className="p-4 lg:p-8">
+        <div className="p-4 lg:p-8 ">
+
           <Header />
           <InvoiceStats />
           <InvoiceActions />
 
-          <div className="flex flex-col lg:flex-row justify-between gap-6 mt-8">
+          <div className="flex flex-col xl:flex-row justify-between gap-6 mt-8">
             <RecentInvoices />
             <RecentActivities />
           </div>
