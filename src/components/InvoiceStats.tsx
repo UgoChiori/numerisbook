@@ -1,5 +1,4 @@
 import React from "react";
-import { HiOutlineViewGrid } from "react-icons/hi";
 
 const InvoiceStats: React.FC = () => {
   const stats = [
@@ -28,9 +27,11 @@ const InvoiceStats: React.FC = () => {
           key={stat.title}
           className="p-4 bg-white rounded-[24px] h-auto min-h-[12rem] flex flex-col justify-center items-start gap-4 uppercase"
         >
-          <HiOutlineViewGrid
+          <img src="/images/geometry.png" alt="icons"
             className="w-[35px] h-[35px] text-gray-400"
-            style={{ strokeWidth: 0.9 }}
+            style={{
+              filter: "invert(53%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(94%) contrast(89%)",
+            }}
           />
           <h3 className="text-[#697598] font-[400] no-italic text-[14px] flex flex-wrap items-center gap-2">
             <span className="mr-2">{stat.title}</span>

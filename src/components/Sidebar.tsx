@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import { FaHome, FaScroll, FaUsers } from "react-icons/fa";
-import { MdAccountCircle, MdOutlineHelpOutline } from "react-icons/md";
-import { HiOutlineViewGrid } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdSettings } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 
 const Sidebar: React.FC = () => {
@@ -15,13 +11,17 @@ const Sidebar: React.FC = () => {
   };
 
   const menuItems = [
-    { name: "Getting Started", path: "/", icon: FaHome },
-    { name: "Overview", path: "/overview", icon: HiOutlineViewGrid },
-    { name: "Accounts", path: "/accounts", icon: MdAccountCircle },
-    { name: "Invoice", path: "/invoice", icon: FaScroll },
-    { name: "Beneficiary Management", path: "/beneficiaries", icon: FaUsers },
-    { name: "Help Center", path: "/help", icon: MdOutlineHelpOutline },
-    { name: "Settings", path: "/settings", icon: MdSettings },
+    { name: "Getting Started", path: "/", icon: "/images/home.png" },
+    { name: "Overview", path: "/overview", icon: "/images/geometry.png" },
+    { name: "Accounts", path: "/accounts", icon: "/images/home.png" },
+    { name: "Invoice", path: "/invoice", icon: "/images/invoice.png" },
+    {
+      name: "Beneficiary Management",
+      path: "/beneficiaries",
+      icon: "/images/user.png",
+    },
+    { name: "Help Center", path: "/help", icon: "/images/helpcenter.png" },
+    { name: "Settings", path: "/settings", icon: "/images/setting.png" },
   ];
 
   return (
@@ -45,7 +45,6 @@ const Sidebar: React.FC = () => {
         </div>
         <ul className="lg:p-4 p-6 lg:space-y-8 space-y-4 text-gray-500">
           {menuItems.map((item) => {
-            const Icon = item.icon;
             const isActive = location.pathname === item.path;
 
             return (
@@ -54,13 +53,19 @@ const Sidebar: React.FC = () => {
                 to={item.path}
                 className={`flex items-center px-4 py-2 lg:px-6 lg:py-3 ${
                   isActive
-                    ? "border-4 border-gray-200 text-gray-500 rounded-full"
+                    ? "border-4 border-gray-100 text-gray-500 rounded-full"
                     : "text-gray-500"
                 }`}
-                onClick={() => setIsOpen(false)} 
+                onClick={() => setIsOpen(false)}
               >
-                <Icon
-                  className={`mr-3 w-[24px] h-[24px] ${isActive ? "" : ""}`}
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  className="mr-3 w-[24px] h-[24px]"
+                  style={{
+                    filter:
+                      "invert(53%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(94%) contrast(89%)",
+                  }}
                 />
                 {item.name}
               </Link>
