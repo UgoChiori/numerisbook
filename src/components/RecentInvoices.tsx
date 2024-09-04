@@ -69,7 +69,7 @@ const RecentInvoices: React.FC = () => {
           {invoiceGroup.items.map((invoice, index) => (
             <li
               key={index}
-              className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-5 lg:mb-6 p-2 sm:p-3 lg:p-4 border-b border-gray-200 last:border-b-0"
+              className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-5 lg:mb-6 p-2 sm:p-3 lg:p-4  border-gray-200 last:border-b-0"
             >
               <div className="flex flex-col mb-2 sm:mb-0 sm:mr-8">
                 <span className="font-bold text-sm sm:text-base">Invoice -</span>
