@@ -231,8 +231,8 @@ const InvoiceDetails: React.FC = () => {
 
       {/* Note Section */}
       <section className="mt-6 bg-gray-100 border p-6 rounded-[20px] md:rounded-[30px]">
-        <p className="text-gray-400">NOTE</p>
-        <p className="font-normal text-[20px] text-gray-500">
+        <p className="text-[#B7BDCF] font-[400] md:text-[14px]">NOTE</p>
+        <p className="font-[400] md:text-[16px] text-[#666F77]">
           Thank you for your patronage
         </p>
       </section>

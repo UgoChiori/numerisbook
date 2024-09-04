@@ -49,7 +49,7 @@ const InvoiceActivity: React.FC = () => {
     className="relative z-10 rounded-full w-8 h-8 md:w-10 md:h-10 mr-0 md:mr-4 mt-2 md:mb-0"
   />
   <div className="p-2 space-y-2 overflow-hidden">
-    <p className="font-500 text-black text-sm md:text-[16px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+    <p className="font-500 text-black text-sm md:text-[15px] whitespace-nowrap overflow-ellipsis overflow-hidden">
       {activity.user}
     </p>
     <p className="text-[#697598] text-xs md:text-[14px] whitespace-nowrap  overflow-hidden">
