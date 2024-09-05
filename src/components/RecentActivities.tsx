@@ -64,7 +64,7 @@ const RecentActivities: React.FC = () => (
   <div className="bg-white p-4 md:p-6 rounded-2xl shadow w-full md:w-3/5 mb-8">
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
       <h3 className="font-medium text-lg md:text-xl">Recent Activities</h3>
-      <button className="text-customBlue border border-gray-300 rounded-2xl uppercase w-28 h-12 px-4 py-2 mt-2 md:mt-0 text-xs font-medium">
+      <button className="text-customBlue border border-gray-300 rounded-[30px] uppercase w-28 h-12 px-4 py-2 mt-2 md:mt-0 text-xs font-medium">
         View All
       </button>
     </div>
