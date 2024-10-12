@@ -118,7 +118,7 @@ The entire project is fully responsive, ensuring a consistent and user-friendly 
 
 ### Usage
 
-Once the development server is running, you can access the application in your browser at `http://localhost:5173`. It is also hosted at `(https://rise-vest-test.vercel.app/#)`.
+Once the development server is running, you can access the application in your browser at `http://localhost:5173`. It is also hosted at `([http://numerisbook.vercel.app/])`.
 
 ### Contributing
 
